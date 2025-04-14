@@ -6,6 +6,7 @@ $name=$_POST["name"];
 $email=$_POST["email"];
 $password=$_POST["password"];
 $mobile = $_POST['mobile'];
+// hello rekhaS
 // print_r($mobile);exit;
 $tmp_name=$_FILES["fileToUpload"]["tmp_name"];
 $file_Name=$_FILES["fileToUpload"]["name"];
