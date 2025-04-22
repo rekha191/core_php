@@ -1,10 +1,12 @@
 <?php
+
 include "dbconnection.php";
 if(isset($_POST["submit"])){
 
 $name=$_POST["name"];
-$email=$_POST["email"];
-$password=$_POST["password"];
+$email=filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+// $password=$_POST["password"];
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $mobile = $_POST['mobile'];
 // hello rekhaS
 // print_r($mobile);exit;
@@ -25,9 +27,6 @@ echo "not inserted sucessfully something is wrong "  ;
 
 
 }
-
-
-
 
 
 ?>

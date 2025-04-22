@@ -1,0 +1,17 @@
+{
+    "name": "ajeetyadav/corephp",
+    "autoload": {
+        "psr-4": {
+            "Ajeetyadav\\Corephp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rekha191",
+            "email": "rkhyadav191@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^4.1"
+    }
+}

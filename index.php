@@ -8,8 +8,12 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 <body>
+<?php include "navbar.php" ?>
   <div class="container mt-4">
     <div class="text-center"><h3>Registration Form</h3></div>
+    <?php session_start(); ?>
+    <p>Welcome <?php echo isset($_SESSION['name']) ? $_SESSION['name'] : 'Rekha'; ?></p>
+
     <form action="registration.php" method="post" enctype="multipart/form-data">
       <div class="row mb-3">
         <div class="col-md-6">
@@ -39,6 +43,8 @@
           <input type="file" class="form-control" id="image" name="fileToUpload">
         </div>
       </div>
+
+     
 
       <div class="row">
         <div class="col-md-12 text-center ">
